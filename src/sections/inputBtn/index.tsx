@@ -1,0 +1,1 @@
+export { InputBtn } from "./inputBtn";
