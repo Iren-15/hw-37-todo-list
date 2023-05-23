@@ -3,12 +3,11 @@ import { Button } from "../../components/button";
 import { Input, IInput } from "../../components/input";
 import { TodoContext } from "../../providers/todo-provider";
 
-export const InputBtn = () => {
+export const InputWithBtn = () => {
   const [value, setValue] = useState<string>("");
 
-  let { setArrayTodo } = useContext(TodoContext);
-  let { arrayTodo } = useContext(TodoContext);
-
+  const { arrayTodo, setArrayTodo } = useContext(TodoContext);
+  
   const onChange: IInput["onChange"] = (e) => {
     setValue(e.target.value);
   };
