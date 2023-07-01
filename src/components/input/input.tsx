@@ -1,5 +1,5 @@
 import { ChangeEvent, HTMLInputTypeAttribute } from "react";
-import styles from "../input/styles.module.scss"
+import styles from "../input/styles.module.scss";
 
 export interface IInput {
   type?: HTMLInputTypeAttribute;
@@ -9,13 +9,13 @@ export interface IInput {
 }
 
 export const Input = ({ name, onChange, type = "text", value }: IInput) => {
-
-  return <input 
-          className={styles["input-item"]}
-          type={type} 
-          name={name} 
-          onChange={onChange} 
-          value={value}
-      
-           />;
+  return (
+    <input
+      className={styles["input-item"]}
+      type={type}
+      name={name}
+      onChange={onChange}
+      value={value}
+    />
+  );
 };

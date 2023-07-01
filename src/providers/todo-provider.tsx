@@ -1,8 +1,8 @@
 import { ReactNode, createContext, useState } from "react";
 
 interface ITodoContext {
-  arrayTodo: string[];
-  setArrayTodo: (arrayTodo: string[]) => void;
+  arrayTodo: any;
+  setArrayTodo: (arrayTodo: any) => void;
 }
 
 export const TodoContext = createContext<ITodoContext>({
