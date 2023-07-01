@@ -1,7 +1,7 @@
 import styles from "../button/styles.module.scss";
 
 interface IButton {
-  title: string;
+  title?: string;
   disabled?: boolean;
   onClick: () => void;
 }
