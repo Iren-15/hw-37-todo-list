@@ -6,10 +6,10 @@ interface IButton {
   onClick: () => void;
 }
 
-export const Button = ({ title, disabled, onClick }: IButton) => {
+export const Button = ({ disabled, onClick }: IButton) => {
   return (
     <button className={styles["btn-add"]} disabled={disabled} onClick={onClick}>
-      {(title = "Add")}
+      Add
     </button>
   );
 };
