@@ -1,10 +1,10 @@
-import { useContext} from "react";
+import { useContext } from "react";
 import { TodoContext } from "../../providers/todo-provider";
 import styles from "../list-todo/styles.module.scss";
 
 export const ListTodo = () => {
   const { arrayTodo, setArrayTodo } = useContext(TodoContext);
- 
+
   const fItemDel = (index: number) => {
     alert("Entry will be deleted!");
     const arrayNew = [...arrayTodo];
@@ -14,7 +14,7 @@ export const ListTodo = () => {
 
   return (
     <div>
-      {arrayTodo.map((item, index) => (
+      {arrayTodo.map((item: any, index: any) => (
         <p
           className={styles["todo-item"]}
           onDoubleClick={() => fItemDel(index)}
