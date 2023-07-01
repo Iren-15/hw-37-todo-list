@@ -19,7 +19,7 @@ export const InputWithBtn = () => {
   return (
     <div>
       <Input value={value} type="string" onChange={onChange} />
-      <Button title="Submit" onClick={onClick} />
+      <Button onClick={onClick} />
     </div>
   );
 };
