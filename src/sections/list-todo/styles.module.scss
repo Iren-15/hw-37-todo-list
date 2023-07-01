@@ -1,0 +1,14 @@
+.todo-item {
+     color:rgb(218, 236, 218);
+     background-color: rgb(15, 111, 37);
+     padding: 10px;
+     margin: 10px;
+     font-size: 25px;
+     width: 45%;
+}
+
+ @media all and (max-width: 820px) {
+     .todo-item {
+         width: 70%;
+     }
+    }

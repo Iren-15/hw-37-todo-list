@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.header {
+    font-size: 55px;
+    font-weight:bolder;
+    margin-left: 160px;
+}
+
+@media all and (max-width: 800px) {
+   .header {
+    font-size: 40px;
+    margin-left: 10px;
+   }
+
+   .container {
+    margin-left: 10px;
+   }
+  }
+  
